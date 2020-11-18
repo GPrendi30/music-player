@@ -1,0 +1,48 @@
+Group Project
+
+   Members: Gerald Prendi
+            Paola Guma
+            Ramazan Tafa
+            Lidia Morariu
+   Leader:  Gerald Prendi
+   Idea:  Music Player
+   Design: Paola + Lidia
+   Abstract
+   
+   Functionality
+   
+   Infrastructure
+        Microsoft Teams
+        Whatsapp 
+        Collab Tools: svn
+     
+   Repository: the layout and explanation of each
+   Delivery: an executable + source code
+   
+   Requirements: 
+          modules: racket/system
+                   2htdp/batch-io
+                   2htdp/image
+                   2htpd/universe
+          Language: Advanced Student Language (ASL)
+          
+   Implementation:
+          Data Structues:
+               list
+               struct
+               hash
+               built-in atomic ds
+          Features:
+              string-comparison and sorting
+              Quick-Sort
+              Searching         
+              Listing the contents of the directory
+              input/output to files
+     
+     
+*Note:  We as a group, came together(while respecting the social distancing and other rules) and went into detail about the implementation.
+ If anything that is listed in the previous parts of the document is not allowed or against the rules, please inform us. 
+
+Question: Above the others, can we use racket/gui? it would simplify the process of designing.
+
+     

@@ -1,0 +1,162 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{dirtree}
+\usepackage{xcolor}
+\usepackage{textcomp}
+\usepackage[a4paper, total={20cm, 20cm}, margin=2cm]{geometry}
+\usepackage[document]{ragged2e}
+
+%opening
+\title{Group Project}
+\author{GroupX}
+\date{12.11.2020}
+\begin{document}
+
+\maketitle
+
+\section*{Group Composition}
+ 
+\textbf{Leader:}
+Gerald Prendi \\
+\textbf{Members:}
+\begin{itemize}
+    \item Paola Guma 
+    \item Ramazan Tafa 
+    \item Lidia Morariu 
+    \item Gerald Prendi 
+\end{itemize}  
+
+\section*{IDEA: Music(Media) Player}
+\subsection*{Design: }
+
+\begin{center}
+ 
+\includegraphics[width=300px,height=200px]{design1.png}\\
+\includegraphics[width=200px,height=210px]{design2.png}
+ \includegraphics[width=200px,height=210px]{design3.png} 
+ \newpage
+ \end{center}
+
+\section*{Abstract}
+
+  The program is a music playback program written in Advanced Student Language.
+  It can play \textit{most audio files}. Allows you to import audio files and make playlists containing them. \\
+  It displays information regarding the song that is being played, like: 
+  \begin{itemize}
+   \item singer
+   \item author
+   \item duration
+   \item album name
+   \item album cover etc..
+  \end{itemize}
+Possible to search not only songs, but also for playlists, artists or albums using the search bar.Sorting is another option, where you can choose from A to Z or reverse.\\
+You can add a song to "Favorites". Seek playback by clicking on the progress bar.
+  \subsection*{Functionality}
+  \begin{itemize}
+   \item import audio files into the program
+   \item playback the audio files
+   \item playback seek by clicking the progress bar
+   \item create and edit playlists
+   \item add songs to "favorites"
+   \item change the theme of the program
+   \item shuffle the songs in the current playlist
+   \item loop through the playlist, or a single song
+   \item search for songs, artists, albums or playlis
+   \item skip the current song or go back to the previous song in the playlist
+   \item sort the songs and/or playlists
+  \end{itemize}
+
+
+\section*{Infrastructure}
+ \paragraph{}
+ The work will be adjusted between:\\
+    -  Microsoft Teams,\\
+    -  Whatsapp,\\
+    -  Notion(for note-taking),\\
+    -  Versioning System: SubVersioN(svn)\\
+      
+               
+\subsection*{Repository}
+  \begin{figure}[h]
+   \includegraphics[width=500px,height=300px]{repository.png}
+  \end{figure}
+  We thought it was better, that the work Repository to be a multi file/folder project, in order for everybody to work in parallel.
+  \paragraph{Explanation:}
+   \textbf{`main.rkt'} is the main executable file, everything will come down to main(It will one have the implementation of big-bang)\\
+   \textbf{'lib'} folder is the folder where libraries will be installed, we intend to download and put libraries we usually require or install using 'raco' in there.\\
+   \textbf{'modules'} folder will have files: 'modules' we created ourselves and will link them to main\\
+   \textbf{'docs'} will have the documentation\\
+   \textbf{'db'} will host the info files, in form of database(we will not implement a database, just plain text files)\\
+   \textbf{'icons'} is a folder for icons needed\\
+   \textbf{'logs'} will have error messages or known bugs, that will be fixed\\
+   \textbf{'test'} folder will have test files, for each main modules\\
+
+\subsection*{Delivery:}
+  The project will be delivered in two ways:\\
+  - an executable file\\
+  - source code \\
+  
+\section*{Plan of Work}
+\subsection*{Steps:}
+ \begin{enumerate}
+  \item First we concept and create a basic idea, with functionalities
+  \item Structure ideas and start visualising the program and work flow
+  \item Think of Data Structures, that will be used
+  \item Work on the backend and think of ideas to handle under the hood work, meanwhile two Members work on design
+  \item The design will be ready, and the backend will be ready too
+  \item Group gathers and start building the GUI(part by part as LEGO bricks)
+  \item Connect GUI with backend
+  \item Test and Debug
+  \item Deliver the project, continue maintaining
+ \end{enumerate}
+\newpage
+ \subsection*{Implementation:}
+ \subsubsection*{Requirements :}
+ \begin{itemize}
+  \item Modules:
+  \subitem racket/system
+  \subitem htdp/batch-io
+  \subitem 2htdp/image
+  \subitem 2htpd/universe
+  \item Language: 
+  \subitem    Advanced Student Language (ASL)
+  \item We will use a command line program (which we will control from our racket program) that will play the media files, will be on our lib folder. Program name = mpv
+  \item *Note during the work, we might come up different modules, will consult TA's if we can use them or not
+\end{itemize}
+\subsection*{Data Structures:}
+\begin{itemize}
+ \item List 
+ \item Struct
+ \item Atomic Data Structures
+ \item hashes : mostly on the `Database` 
+\end{itemize}
+\subsection*{Features:}
+ \begin{itemize}
+  \item String Comparison(and Sort)
+  \item Implementation of Quick Sort
+  \item Input/Output in/from files
+  \item Modules(created and called by us)
+  \item Printing Contents of a directory
+  \item Creating registries with hashes(playlists and songs)
+ \end{itemize}
+
+
+\section*{**Note :}
+ The whole group helped in the making of this document: \\
+ - the design was done by Paola and Lidia as well as spell check and correction. \\
+ - abstract and featuring was done by Ramazan.\\
+ We as a group, came together(while respecting the social distancing and other rules) and went into detail about the implementation.\\
+ If anything that is listed in the previous parts of the document is not allowed or against the rules, please inform us.\\
+
+ 
+\textbf{Is it possible to use racket/gui , it would help us speed up the process of designing the GUI of the program?\\}
+
+\textbf{If you have any questions, feel free to contact us.\newline}
+Contact: \\
+Gerald Prendi\newline
+Email: gerald.prendi@usi.ch
+
+
+\end{document}
