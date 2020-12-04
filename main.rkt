@@ -2,11 +2,10 @@
 ;; about the language level of this file in a form that our tools can easily process.
 #reader(lib "htdp-advanced-reader.ss" "lang")((modname main) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #t #t none #f () #f)))
 (require "modules/gui-test.rkt")
-(require racket/gui)
 ;This is the main file
 
 "Hello, World!"
 "This Project is gonna be fucking GREAT!"
 
-(send frame show #t)
+
 

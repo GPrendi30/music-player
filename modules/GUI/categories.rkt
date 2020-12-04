@@ -282,7 +282,7 @@
 0 0 0 -1 -1 2 1 #"\0"
 0 -1 1 #"\0"
 1.0 0 -1 -1 -1 -1 -1 -1 1 0 0 0 0 0 0.0 0.0 0.0 1.0 1.0 1.0 0 191 255 0
-0 0 -1 -1           0 47 0 4 3 85
+0 0 -1 -1           0 43 0 4 3 85
 (4
  #";; The first three lines of this file were inserted by DrRacket. They"
  #" record metadata"
@@ -359,27 +359,25 @@
 0 0 25 3 1 #")"
 0 0 25 29 1 #"\n"
 0 0 25 29 1 #"\n"
-0 0 17 3 89
+0 0 17 3 103
 (7
- #";you can go to GUI.rkt and change only the style part, remove it then"
- #" do your own design."
+ #";you can go to GUI.rkt and change only the message that corresponds, "
+ #"remove it then do your own design."
 ) 0 0 25 29 1 #"\n"
 0 0 25 29 1 #"\n"
-0 0 17 3 19 #";by default gui.rkt"
+0 0 17 3 48 #";by default gui.rkt will not show the gui panel,"
+0 0 25 29 1 #"\n"
+0 0 17 3 98
+(8
+ #";if you want to it to show just uncomment the following line (also yo"
+ #"u need this to see your work)"
+) 0 0 25 29 1 #"\n"
+0 0 25 29 1 #"\n"
+0 0 17 3 2 #";("
+0 0 17 3 4 #"send"
 0 0 17 3 1 #" "
-0 0 17 3 4 #"will"
+0 0 17 3 4 #"main"
 0 0 17 3 1 #" "
 0 0 17 3 4 #"show"
-0 0 17 3 1 #" "
-0 0 17 3 3 #"the"
-0 0 17 3 1 #" "
-0 0 17 3 3 #"gui"
-0 0 17 3 1 #" "
-0 0 17 3 6 #"panel,"
-0 0 25 29 1 #"\n"
-0 0 17 3 66
-#";if you don't want to it to show just uncomment the following line"
-0 0 25 29 1 #"\n"
-0 0 25 29 1 #"\n"
-0 0 17 3 21 #";(send main show #f) "
+0 0 17 3 5 #" #t) "
 0           0
