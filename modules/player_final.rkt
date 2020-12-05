@@ -16,7 +16,7 @@
 (define pulse (element-factory%-make "autoaudiosink"))
 (define pipeline (pipeline%-new "player"))
 (define volume (element-factory%-make "volume"))
-
+  
 ;playing
 ;(send pipeline set-state 'playing)
 
