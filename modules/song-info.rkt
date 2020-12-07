@@ -7,14 +7,14 @@
 (require (except-in racket/gui tag))
 (require racket/draw)
 
-(define root "set-root")
+(define root "/home/geri/Desktop/svn/pf1-project/")
   
 (define (create-absolute-path a-relative-path)
     (string-append root a-relative-path))
 
 (define FFMPEG (create-absolute-path "lib/ffmpeg/ffmpeg"))
 
-(define song2 "define-yourself")
+(define song2 "/home/geri/Music/Mzk/BEATS/mark.mp3")
 
 (define MOGRIFY (create-absolute-path "lib/mogrify/mogrify"))
 
@@ -28,8 +28,8 @@
    (let
        [(save-file (string-append save-path "cover/" save-name ".png"))
         (save-file-icon (string-append save-path "icons/" save-name "-icon.png"))
-        (cover-size "150x150")
-        (icon-size "80x80")]
+        (cover-size "220x220!")
+        (icon-size "80x80!")]
        (process* FFMPEG "-i" a-song-path save-file)
        (process* FFMPEG "-i" a-song-path save-file-icon)
        (resize save-file cover-size)

@@ -1,11 +1,14 @@
 ;; The first three lines of this file were inserted by DrRacket. They record metadata
 ;; about the language level of this file in a form that our tools can easily process.
 #reader(lib "htdp-advanced-reader.ss" "lang")((modname main) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #t #t none #f () #f)))
-(require "modules/gui-test.rkt")
+;(require "modules/gui-test.rkt")
+(require racket/base)
 ;This is the main file
+(define root (path->string (current-directory)))
 
 "Hello, World!"
 "This Project is gonna be fucking GREAT!"
 
+(provide root)
 
 
