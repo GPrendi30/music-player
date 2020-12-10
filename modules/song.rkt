@@ -11,6 +11,7 @@
     (string-append root a-relative-path))
 
 (provide ;creating
+         (struct-out SONG)
          create-SONG
          resize
          create-absolute-path
